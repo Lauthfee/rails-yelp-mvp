@@ -1,0 +1,28 @@
+<div class="container">
+  <h2><%= @restaurant.name %></h2>
+  <div class="top-show">
+
+  <div class="card-product">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/0e/4f/e5/img-20170728-wa0018-largejpg.jpg" />
+    <div class="card-product-infos">
+      <div class="info-top">
+        <p><strong>Address</strong>: <%= @restaurant.address %> </p>
+        <p><strong>Category</strong>: <%= @restaurant.category.capitalize %></p>
+      </div>
+      <div class="info-down">
+        <%= link_to "Add review", new_restaurant_review_path(@restaurant), class: "btn-small"%>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="bottom-show">
+    <h2>Here's what people think about us!</h2>
+
+
+      <% @restaurant.reviews.each do |review| %>
+        <p><%= review.content %></p>
+      <% end %>
+
+  </div>
+</div>

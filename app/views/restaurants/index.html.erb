@@ -1,0 +1,12 @@
+<div class="container" >
+  <h1>Here's a list of all my favorite restaurants:</h1>
+
+  <div class="cards">
+    <% @restaurants.each do |restaurant| %>
+      <div class="card-category">
+        <p>- <%= restaurant.name %></p>
+        <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%>
+      </div>
+    <% end %>
+  </div>
+</div>

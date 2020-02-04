@@ -12,25 +12,25 @@ puts 'Creating restaurants...'
 restaurants_attributes = [
   {
     name:         'Dishoom',
-    address:      '7 Boundary St, London E2 7JE',
+    address:      '7 Boundary St, London E2L 7JE',
     phone_number: '514-514-5145',
     category: 	  'chinese',
   },
   {
     name:         'La Banquise',
-    address:      'Rue rachelle, Montreal, Canada',
+    address:      '125 Rue rachelle, Montreal, Canada',
     phone_number: '514-555-5555',
     category: 	  'french',
   },
   {
     name:         'Chez Omar',
-    address:      'Repentigny',
+    address:      '1369, des Perce-neige, Repentigny J5Y 0B8',
     phone_number: '514-666-6666',
     category: 	  'french',
   },
   {
     name:         'LafLeur',
-    address:      '7 Le Caron, Montreal, Canada',
+    address:      '7 Le Caron, Montreal, H4E 1K6',
     phone_number: '514-514-5145',
     category: 	  'italian',
   },
